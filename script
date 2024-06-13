@@ -9,3 +9,30 @@ then
     echo $i
 fi;
 done
+
+=======================================================
+
+#!/bin/bash
+
+#Enter a number by user chrck its Even ya not
+
+read -p "Enter a number----" i
+
+if [ `expr $i % 2` == 0 ]
+then
+    echo "$i YES its a EVEN number"
+else
+    echo "$i NOT a EVEN"
+fi
+
+==========================================================
+
+#!/bin/bash
+
+#count number of "i" in mississipi
+
+x=mississipi
+
+grep -o "i" <<<$x | wc -l
+
+============================================================
